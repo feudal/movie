@@ -46,7 +46,6 @@ a {
 }
 
 .header {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +68,19 @@ a {
 
 .header__menu {
   display: flex;
+}
+.menu-burger {
+	display: none;
+	width: 22px;
+	height: 20px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.menu-burger span {
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: #fff;
 }
 
 .header__link {
@@ -98,6 +110,12 @@ a {
   background-color: transparent;
   color: #f10e1f;
   border: 0;
+}
+
+.header__group {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .header__group button:first-child {
@@ -283,10 +301,13 @@ div.trailer_jurasicpark {
   text-align: justify;
 }
 
-.block-movie__content_small h3 {
+.block-movie__content_small .block-movie__title {
   font-size: 36px;
 }
 
+.block-movie__content_right .block-movie__title {
+  text-align: right;
+}
 .block-movie__content_right {
   text-align: right;
 }
@@ -341,7 +362,7 @@ div.trailer_jurasicpark {
 
 .blocks-trend {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 
 }
@@ -351,7 +372,7 @@ div.trailer_jurasicpark {
 }
 
 .block-trend {
-  width: 19%;
+  width: 24%;
   flex-grow: 1;
   display: inline-block;
   margin-bottom: 70px;

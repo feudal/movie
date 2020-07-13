@@ -23,6 +23,7 @@ $(document).ready(function() {
     }, {
       breakpoint: 786,
       settings: {
+      	centerMode: false,
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -42,6 +43,19 @@ $(document).ready(function() {
     dots: false,
     slidesToShow: 10,
     slidesToScroll: 3,
+    responsive: [{
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    }, {
+      breakpoint: 786,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });
 
   $sliderCategory__link = $('.slider-category__link');

@@ -3,6 +3,15 @@
 
 @media only screen and (max-width: 1024px) {
 
+  /*****--------------------block-movie content-----------------*****/
+  .block-movie__content {
+    width: 50%;
+  }
+
+  .block-movie__content_right {
+    margin-left: 20px;
+  }
+
   /*****--------------------movie details-----------------*****/
   .movie-details {
     display: flex;
@@ -31,37 +40,57 @@
   .movie-details__fact {
     justify-content: flex-start;
   }
+
   /*****--------------------poster block-----------------*****/
-.poster-block__title {
-  font-size: 12px;
-  line-height: 20px;
-  padding: 5px 5px;
-}
+  .poster-block__title {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 5px;
+  }
 
-/*****--------------------footer-----------------*****/
-.footer-wrapper {
-  flex-wrap: wrap;
-}
+  /*****--------------------footer-----------------*****/
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
 
-.footer__info {
-  min-width: 100%;
-  margin-bottom: 20px;
-}
+  .footer__info {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
 
-.footer-info__rights {
-  margin-bottom: 20px;
-}
+  .footer-info__rights {
+    margin-bottom: 20px;
+  }
 
-.wrapper-stars {
-  margin-top: 15px;
-}
+  .wrapper-stars {
+    margin-top: 15px;
+  }
 
-.footer-info__social {
-  margin-top: 20px;
-}
+  .footer-info__social {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+
+  /*****--------------------block-movie content-----------------*****/
+  .block-movie {
+    flex-wrap: wrap;
+  }
+
+  .block-movie__trailer {
+    min-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .block-movie__content {
+    width: 100%;
+  }
+
+  .block-movie__content_right {
+    margin-left: 20px;
+  }
+
   /*****--------------------movie details-----------------*****/
   .movie-details {
     justify-content: flex-start;
@@ -82,42 +111,47 @@
   }
 
   /*****--------------------poster block-----------------*****/
-.posters-blocks {
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 30px 0 50px;
-}
+  .posters-blocks {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0 50px;
+  }
 
-div.posters-block {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  width: 45%;
-}
+  div.posters-block {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+  }
 
-.posters-blocks :nth-child(2n) {
-  margin-right: 0;
-}
-.poster-block__title {
-  font-size: 14px;
-  line-height: 25px;
-  padding: 10px 5px;
-}
-/*****--------------------footer-----------------*****/
-.footer__menu {
-  min-width: 100%;
-  margin-top: 30px;
-}
-div.footer__menu-title {
-  font-size: 30px;
-}
-.footer__menu-link {
-  font-size: 20px;
-}
+  .posters-blocks :nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .poster-block__title {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 5px;
+  }
+
+  /*****--------------------footer-----------------*****/
+  .footer__menu {
+    min-width: 100%;
+    margin-top: 30px;
+  }
+
+  div.footer__menu-title {
+    font-size: 30px;
+  }
+
+  .footer__menu-link {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+
   /*****--------------------movie details-----------------*****/
-    .movie-details {
+  .movie-details {
     justify-content: center;
     align-items: center;
   }
@@ -130,22 +164,161 @@ div.footer__menu-title {
     margin-top: 20px;
     width: 100%;
   }
-   /*****--------------------poster block-----------------*****/
-div.posters-block {
-  width: 100%;
-  margin-right: 0;
+
+  /*****--------------------poster block-----------------*****/
+  div.posters-block {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .poster-block__title {
+    font-size: 20px;
+    line-height: 36px;
+    padding: 20px 10px;
+  }
+
+  /*****--------------------footer-----------------*****/
+  .footer__menu {
+    height: 560px;
+  }
+
+  .footer__wrapper-menu {
+    height: 520px;
+  }
+
+
 }
-.poster-block__title {
-  font-size: 20px;
-  line-height: 36px;
-  padding: 20px 10px;
+
+/*****--------------------media-----------------*****/
+
+/*****--------------------jurasic-----------------*****/
+
+/*****--------------------media-----------------*****/
+@media only screen and (max-width: 1024px) {
+  .trailer_jurasicpark {
+    height: 450px;
+  }
 }
-/*****--------------------footer-----------------*****/
-.footer__menu {
-  height: 560px;
+
+@media only screen and (max-width: 500px) {
+  .trailer_jurasicpark {
+    height: 650px;
+  }
+
+  .group-tags__tag {
+    padding: 5px;
+  }
+
+  .control_play {
+    margin-right: 8px!important;
+  }
+
+  .control_play,
+  .control_add {
+    padding: 10px 14px;
+    margin-top: 25px;
+  }
 }
-.footer__wrapper-menu {
-  height: 520px;
+
+/*****--------------------media-----------------*****/
+
+/*****--------------------media-----------------*****/
+@media only screen and (max-width: 1440px) {
+    .block-trend {
+    max-width: 300px!important;
+  }
 }
+
+@media only screen and (max-width: 1024px) {
+  .block-trend {
+    width: 30%;
+    max-width: 280px;
+  }
+
+  .blocks-trend :nth-child(5n) {
+    margin-right: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .block-trend {
+    width: 45%;
+  }
+
+  .blocks-trend :nth-child(5n) {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .block-trend {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .blocks-trend :nth-child(5n) {
+    margin-right: 0px;
+  }
+
+  .block-trend__img {
+    height: 300px;
+  }
+
+}
+
+/*****--------------------media-----------------*****/
+
+
+/*****--------------------media-----------------*****/
+
+@media only screen and (max-width: 768px) {
+  .block-movie__poster {
+    height: 420px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .block-movie__poster img {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  
+}
+/*****--------------------media-----------------*****/
+
+/*****--------------------media-----------------*****/
+@media only screen and (min-width: 1024px) {
+.header__group i {
+  font-size: 0px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.header__form {
+  display: none;
+}
+.header__group button{
+  font-size: 0;
+  padding: 10px;
+}
+.header__group i {
+  font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-burger {
+  display: flex;
+}
+.header__menu {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 320px) {
+  
 }
 /*****--------------------media-----------------*****/
