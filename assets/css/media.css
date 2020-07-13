@@ -1,0 +1,151 @@
+/*****--------------------media-----------------*****/
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1024px) {
+
+  /*****--------------------movie details-----------------*****/
+  .movie-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .movie-details__poster {
+    width: 40%;
+    order: -1;
+    flex-shrink: 1;
+  }
+
+  .movie-details__content {
+    order: 3;
+    border: 0;
+    border-top: 1px solid #4c4c4c;
+    margin-top: 30px;
+  }
+
+  .movie-details__facts {
+    width: 60%;
+    min-width: 0;
+  }
+
+  .movie-details__fact {
+    justify-content: flex-start;
+  }
+  /*****--------------------poster block-----------------*****/
+.poster-block__title {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 5px 5px;
+}
+
+/*****--------------------footer-----------------*****/
+.footer-wrapper {
+  flex-wrap: wrap;
+}
+
+.footer__info {
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-info__rights {
+  margin-bottom: 20px;
+}
+
+.wrapper-stars {
+  margin-top: 15px;
+}
+
+.footer-info__social {
+  margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /*****--------------------movie details-----------------*****/
+  .movie-details {
+    justify-content: flex-start;
+  }
+
+  .movie-details__poster {}
+
+  .movie-details-fact__poster {
+    margin-right: 15px;
+  }
+
+  .movie-details__facts {
+    padding: 15px;
+  }
+
+  .movie-details__fact {
+    margin-bottom: 15px;
+  }
+
+  /*****--------------------poster block-----------------*****/
+.posters-blocks {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0 50px;
+}
+
+div.posters-block {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.posters-blocks :nth-child(2n) {
+  margin-right: 0;
+}
+.poster-block__title {
+  font-size: 14px;
+  line-height: 25px;
+  padding: 10px 5px;
+}
+/*****--------------------footer-----------------*****/
+.footer__menu {
+  min-width: 100%;
+  margin-top: 30px;
+}
+div.footer__menu-title {
+  font-size: 30px;
+}
+.footer__menu-link {
+  font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 450px) {
+  /*****--------------------movie details-----------------*****/
+    .movie-details {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movie-details__poster {
+    width: 100%;
+  }
+
+  .movie-details__facts {
+    margin-top: 20px;
+    width: 100%;
+  }
+   /*****--------------------poster block-----------------*****/
+div.posters-block {
+  width: 100%;
+  margin-right: 0;
+}
+.poster-block__title {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 20px 10px;
+}
+/*****--------------------footer-----------------*****/
+.footer__menu {
+  height: 560px;
+}
+.footer__wrapper-menu {
+  height: 520px;
+}
+}
+/*****--------------------media-----------------*****/

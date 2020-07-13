@@ -1,0 +1,144 @@
+.slider {
+  position: relative;
+  min-width: 0;
+  margin: 0 30px 25px;
+}
+
+.slider img {
+  object-fit: cover;
+}
+
+.slider .slick-track {
+  /*   //pentru slider vertical
+display: block; */
+}
+
+/* Слайдер */
+.slick-slider {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Стрелка */
+.slider .slick-arrow {
+  font-size: 0;
+  border: 0;
+  width: 50px;
+  height: 100px;
+
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 50px);
+}
+
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+  background: url("../img/LeftArrow.png") no-repeat center;
+  left: 0%;
+}
+
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  background: url("../img/RightArrow.png") no-repeat center;
+  right: 0%;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+  opacity: .6;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  position: absolute;
+  bottom: 8%;
+  left: calc(50% - 30px);
+}
+
+.slick-dots li {
+  font-size: 0;
+  display: inline-block;
+
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  height: 10px;
+  width: 10px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 0;
+}
+
+/*****--------------------media-----------------*****/
+.slider {
+  height: 180px;
+}
+
+.slider img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .slider {
+    height: 222px;
+  }
+
+  .slider img {
+    height: 222px;
+  }
+}
+
+/*****--------------------media-----------------*****/
+
+.slider-category {
+  position: relative;
+  width: 80%;
+  margin: 35px auto 55px;
+  padding: 10px 30px;
+}
+
+/* Стрелка */
+.slick-slider .slick-arrow {
+  font-size: 0;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  
+  background-color: #020d18;
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 25px);
+  transform: scale(.7, 0.7);
+}
+
+/* Стрелка влево */
+.slider-category .slick-arrow.slick-prev {
+  background: url("../img/LeftArrow.png") no-repeat center, #020d18;
+  left: -8px;
+}
+
+/* Стрелка вправо */
+.slider-category .slick-arrow.slick-next {
+  background: url("../img/RightArrow.png") no-repeat center, #020d18;
+  right: -8px;
+}
