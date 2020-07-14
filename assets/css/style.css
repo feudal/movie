@@ -367,11 +367,12 @@ div.trailer_jurasicpark {
 
 }
 
-.blocks-trend :nth-child(5n) {
+.blocks-trend :nth-child(4n) {
   margin-right: 0;
 }
 
 .block-trend {
+	max-width: 300px;
   width: 24%;
   flex-grow: 1;
   display: inline-block;
@@ -817,7 +818,7 @@ div.trailer_jurasicpark {
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle closest-side, #545454, transparent);
+  background: radial-gradient(circle closest-side, #2d2d2d, transparent);
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease;
 }

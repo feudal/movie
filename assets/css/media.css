@@ -223,7 +223,7 @@
 /*****--------------------media-----------------*****/
 
 /*****--------------------media-----------------*****/
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1600px) {
     .block-trend {
     max-width: 300px!important;
   }
@@ -235,7 +235,7 @@
     max-width: 280px;
   }
 
-  .blocks-trend :nth-child(5n) {
+  .blocks-trend :nth-child(4n) {
     margin-right: 10px;
   }
 
@@ -246,8 +246,13 @@
     width: 45%;
   }
 
-  .blocks-trend :nth-child(5n) {
+  .blocks-trend :nth-child(4n) {
     margin-right: 10px;
+  }
+
+  .reclama {
+    height: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -264,6 +269,9 @@
 
   .block-trend__img {
     height: 300px;
+  }
+      .block-trend {
+    max-width: 100%!important;
   }
 
 }
